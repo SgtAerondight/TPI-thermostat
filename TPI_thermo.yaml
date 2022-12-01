@@ -107,7 +107,7 @@ action:
         target:
           entity_id: !input entity_chauffage
       - delay: '{{temps_chauffe}}'
-      - service: switch.turn_on
+      - service: switch.turn_off
         target:
           entity_id: !input entity_chauffage
 mode: restart
