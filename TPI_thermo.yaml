@@ -92,7 +92,7 @@ action:
           - condition: template
             value_template: '{{puissance == 0}}'
         sequence:
-          - service: switch.turn_on
+          - service: switch.turn_off
             target:
               entity_id: !input entity_chauffage
       - conditions:
